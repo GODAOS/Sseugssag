@@ -1,0 +1,73 @@
+@charset "UTF-8";
+@font-face {
+	font-family: "GM";
+	src: url("font/GmarketSansTTFMedium.ttf");
+	}
+	@font-face {
+	font-family: "gl";
+	src: url("resources/css/font/GmarketSansTTFLight.ttf");
+	}
+	#orderbody{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	#ordertbl{
+		width: 90%;
+		margin-left: 6%;
+		margin-top: 50px;
+	}
+	#ordertitle{
+		font-size: 35px;
+		font-family: "GM";
+	}
+	#orderhead{
+		font-family: "GM";
+		font-weight: 3px;
+	}
+	.ordernumber{
+		font-size: 20px;
+		width: 100px;
+		height: 30px;
+		border-bottom: 0.5px solid;
+	}
+	.ordername{
+		font-size: 20px;
+		width: 120px;
+		height: 30px;
+		border-bottom: 0.5px solid;
+	}
+	.orderID{
+		font-size: 20px;
+		width: 170px;
+		height: 30px;
+		border-bottom: 0.5px solid;
+	}
+	.orderphone{
+		font-size: 20px;
+		width: 200px;
+		height: 30px;
+		border-bottom: 0.5px solid;
+	}
+	.orderadd{
+		font-size: 20px;
+		width: 700px;
+		height: 30px;
+		border-bottom: 0.5px solid;
+	}
+	.orderarea{
+		font-size: 20px;
+		width: 120px;
+		height: 30px;
+		border-bottom: 0.5px solid;
+	}
+	.orderdate{
+		font-size: 20px;
+		width: 240px;
+		height: 30px;
+		border-bottom: 0.5px solid;
+	}
+	
+	#ordermain{
+		font-family: "gl";
+	}

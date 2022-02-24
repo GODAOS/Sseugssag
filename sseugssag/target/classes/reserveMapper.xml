@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sseugssag.main.reserve.ReserveMapper">
+	<!-- 예약하기 -->
+	<insert id="getReserve"
+		parameterType="com.sseugssag.main.reserve.Reserve">
+		insert into p_reserve
+		values(r_num_seq.nextval,#{r_date},#{r_id},#{r_name},#{r_phone},#{r_address},#{r_area})
+	</insert>
+
+	<!-- 기업 예약 확인 -->
+	<select id="OrderCheck"
+		parameterType="com.sseugssag.main.reserve.Reserve"
+		resultType="com.sseugssag.main.reserve.Reserve">
+		select * from p_reserve order by r_date DESC, r_num DESC
+	</select>
+	
+	<!-- 고객 예약 확인  -->
+	<select id="reserveRoding"
+		parameterType="com.sseugssag.main.reserve.Reserve"
+		resultType="com.sseugssag.main.reserve.Reserve">
+		select *from p_reserve where r_id=#{r_id} order by r_num DESC
+	</select>
+
+	<!-- 예약 삭제  -->
+	<delete id="deleteRs" parameterType="com.sseugssag.main.reserve.Reserve">
+	delete from p_reserve where r_num = #{r_num} 
+	</delete>
+	
+	<!-- 탈퇴시 예약 삭제  -->
+	<delete id="deleteID" parameterType="com.sseugssag.main.reserve.Reserve">
+	delete from p_reserve where r_id = #{r_id} 
+	</delete>
+
+
+</mapper>

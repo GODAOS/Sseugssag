@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sseugssag.main.review.ReviewMapper">
+	<insert id="writeReview" parameterType="com.sseugssag.main.review.Review">
+	 	insert into r_board values(r_board_seq.nextval, #{c_id}, #{r_photo, jdbcType=VARCHAR}, #{r_txt}, sysdate, #{r_star})
+	</insert>
+	<select id="getAllReviewCount" resultType="java.lang.Integer">
+		select count(*) from r_board, p_customer where c_id = r_writer
+	</select>
+	<select id="getSearchRvCount" parameterType="com.sseugssag.main.review.ReviewSelector" resultType="java.lang.Integer">
+		select count(*) from r_board, p_customer where c_id = r_writer and r_txt like '%'||#{search}||'%'
+	</select>
+	<select id="getRv" parameterType="com.sseugssag.main.review.ReviewSelector" resultType="com.sseugssag.main.review.Review">
+		<!-- 한페이지에 시작과 끝 사이에  있는 것들을 검색어로 찾아서 그것에 대한 모든 정보를 , 최신순으로(order by desc)-->
+		select * from (
+			select rownum as rn, r_photo, c_id, r_txt, r_date, r_no, r_star from(
+				select * from p_customer, r_board where c_id = r_writer and r_txt like '%'||#{search}||'%' order by r_date desc))
+					where rn &gt;= #{start} and rn &lt;= #{end}
+	</select>
+	<delete id="deleteRv" parameterType="com.sseugssag.main.review.Review">
+		delete from r_board where r_no = #{r_no}  
+	<!-- n_board의 primary key인 no로 삭제 -->
+	</delete>
+	<update id="updateRv" parameterType="com.sseugssag.main.review.Review">
+		update r_board set r_txt = #{r_txt} where r_no=#{r_no}
+	</update>
+	
+	<!-- 별점 관련 -->
+	
+	<!--  <insert id="getStar" parameterType="com.sseugssag.main.review.Review">
+			insert into r_star values(ss_star_seq.nextval, #{s_star})
+	</insert>-->
+	<!--  별 값 불러오기 -->
+	<select id="checkStar" parameterType="com.sseugssag.main.review.Review"  resultType="com.sseugssag.main.review.Review">
+			select #{r_star} from r_board
+	</select>
+</mapper>

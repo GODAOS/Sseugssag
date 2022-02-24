@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: "gl";
+	src: url("resources/css/font/GmarketSansTTFLight.ttf");
+}
+
+@font-face {
+	font-family: "GM";
+	src: url("font/GmarketSansTTFMedium.ttf");
+}
+
+#reservebody {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#reservetbl {
+	width: 55%;
+	margin-top: 60px;
+	margin-left: 23%;
+	font-family: "gl";
+	font-size: 22px;
+	margin-left: 23%;
+}
+
+#reservetbl #reserveTitle {
+	font-family: "GM";
+	font-size: 29px;
+}
+
+#reservetbl .reservetd {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-bottom: 0.5px solid;
+}
+
+#reservetbl .reserveinput {
+	height: 40px;
+	width: 300px;
+	font-size: 17px;
+}
+
+#reservebt {
+	background-color: #1a9fe3;
+	color: white;
+	border: 1px solid white;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	margin-left: 45%;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 16px;
+	padding-top: 16px;
+	margin-top: 9px;
+	font-size: 17px;
+}

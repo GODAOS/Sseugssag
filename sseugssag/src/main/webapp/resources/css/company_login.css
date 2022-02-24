@@ -1,0 +1,54 @@
+@charset "UTF-8";
+@font-face {
+	font-family: "gl";
+	src: url("resources/css/font/GmarketSansTTFLight.ttf");
+	}
+	#comjoinbody{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	#comjointbl{
+		margin-left: 27%;
+		margin-top: 40px;
+		font-family: "gl";
+	}
+	#comjointitle{
+		font-size: 29px;
+	}
+	#comjoin {
+		height: 700px;
+		font-size: 20px;
+		font-family: "gl";
+		font-weight: 250px;
+	}
+	#comjoinbt {
+		margin-left: 40%;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		background-color: #1a9fe3;
+		color: white;
+		border: 1px solid white;
+		border-top-left-radius: 9px;
+		border-top-right-radius: 9px;
+		border-bottom-right-radius: 9px;
+		border-bottom-left-radius: 9px;
+		font-size: 20px;
+		font-family: "gl";
+		font-weight: 500px;
+	}
+	.tr1 .input1{
+		font-family: "gl";
+		font-weight: 500px;
+		font-size: 15px;
+		width: 500px;
+		height: 30px;
+	}
+	#tr2 #comjoinselect{
+		height: 30px;
+		width: 110px;
+		font-size: 15px;
+		font-family: "gl";
+	}

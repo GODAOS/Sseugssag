@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: "gl";
+	src: url("resources/css/font/GmarketSansTTFLight.ttf");
+}
+
+@font-face {
+	font-family: "GM";
+	src: url("font/GmarketSansTTFMedium.ttf");
+}
+
+#recheckbody {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#rechecktbl {
+	margin-left: 30%;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	font-family: "gl";
+}
+
+#rechecktitle {
+	font-family: "GM";
+	font-size: 29px;
+}
+
+#recheck {
+	height: 700px;
+	font-size: 20px;
+	font-family: "gl";
+	font-weight: 250px;
+}
+
+#recheck .recheckinput {
+	font-family: "gl";
+	font-weight: 500px;
+	font-size: 15px;
+	width: 500px;
+	height: 30px;
+}
+
+#recheck .rechecktd {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-bottom: 0.5px solid;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#rsDelBt{
+		padding: 5px;
+		background-color: #1a9fe3;
+		color: white;
+		border: 1px solid white;
+		border-radius: 9px;
+		font-size: 20px;
+		font-family: "GM";
+		font-weight: 300px;
+		width: 100px;
+		height: 40px;
+}

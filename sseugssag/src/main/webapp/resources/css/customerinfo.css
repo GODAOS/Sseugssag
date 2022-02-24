@@ -1,0 +1,70 @@
+@charset "UTF-8";
+@font-face {
+		font-family: "gl";
+		src: url("resources/css/font/GmarketSansTTFLight.ttf");
+	}
+	#cusinfobody{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	#cusinfotbl{
+		margin-left: 30%;
+		margin-top: 40px;
+		font-family: "gl";
+	}
+	#cusinfotitle{
+		font-size: 29px;
+	}
+	#cusinfo{
+		height: 700px;
+		font-size: 20px;
+		font-family: "gl";
+		font-weight: 250px;
+	}
+	#cusinfo .cusinfoinput{
+		font-family: "gl";
+		font-weight: 500px;
+		font-size: 15px;
+		width: 500px;
+		height: 30px;
+	}
+	#cusinfo .cusinfotd{
+		text-align: center;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		border-bottom: 0.5px solid;
+	}
+	#cusinfobt{
+		padding-left: 100px;
+		padding-right: 100px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		background-color: #1a9fe3;
+		color: white;
+		border: 1px solid white;
+		border-top-left-radius: 9px;
+		border-top-right-radius: 9px;
+		border-bottom-right-radius: 9px;
+		border-bottom-left-radius: 9px;
+		font-size: 20px;
+		font-family: "gl";
+		font-weight: 500px;
+	}
+	#cusbyebt {
+		padding-left: 100px;
+		padding-right: 100px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		background-color: #1a9fe3;
+		color: white;
+		border: 1px solid white;
+		border-top-left-radius: 9px;
+		border-top-right-radius: 9px;
+		border-bottom-right-radius: 9px;
+		border-bottom-left-radius: 9px;
+		font-size: 20px;
+		font-family: "gl";
+		font-weight: 500px;
+		margin-left: 160px;
+	}

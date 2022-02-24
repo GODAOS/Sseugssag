@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: "gb";
+	src: url("gbold.ttf");
+}
+
+@font-face {
+	font-family: "nsrb";
+	src: url("nsrb.ttf");
+}
+
+@font-face {
+	font-family: "gmedi";
+	src: url("gmedi.ttf");
+}
+
+@font-face {
+	font-family: "gsl";
+	src: url("gsl.ttf");
+}
+
+h1{
+	font-family: "gb";	
+	width: 100%;
+}
+
+
+#search{
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#search input{
+	font-family: "gsl";
+	width: 700px;
+	height: 30px;
+	font-size: 12pt;
+}
+
+#search button{
+	font-family: "gsl";
+	width: 80px;
+	height: 30px;
+	font-size: 12pt;
+	background-color: #1a9fe3;
+	color: white;
+	border-radius: 5px;
+}
+
+#search button:hover {
+	background-color: white;
+	color: #1a9fe3;
+}
+
+
+#write-review{
+	width: 800px;
+	font-family: "gb";
+	height: 200px;
+	border: 1px solid #C3C3C3;
+	border-radius: 10px;
+	padding: 20px;
+} 
+
+#write-review .rv-title{
+	font-family: "gb";
+	font-size: 16pt;
+	color: #1a9fe3;
+	border-bottom: 1px solid #C3C3C3;
+	
+}
+
+
+
+#write-review tr{
+	height: 35px;
+}
+
+#write-review textarea{
+	width: 100%;
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "gsl";
+}
+
+#write-review .upload-bu{
+	font-family: "gsl";
+	width: 100px;
+	height: 30px;
+	font-size: 12pt;
+	background-color: #1a9fe3;
+	color: white;
+	border-radius: 5px;
+}
+
+#write-review .upload-bu:hover{
+	background-color: white;
+	color: #1a9fe3;
+}
+
+#other-review{
+	font-family: "gb";
+	font-size: 16pt;
+	color: #1a9fe3;
+}
+
+#written-review{
+	border: 1px solid #C3C3C3;
+	border-radius: 10px;
+	width: 800px;
+	height: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "gmedi";
+}
+
+#written-review td{
+	padding: 10px;
+	font-family: "gmedi";
+}
+#written-review img{
+	width: 100px;
+	height: 100px;
+}
+
+#written-review #review-profile{
+	width: 20%;
+	font-family: "gmedi";
+}
+
+#written-review .id{
+	border-right: 1px solid #C3C3C3;
+}
+
+#written-review .written-txt{
+	width: 100%;
+	font-family: "gmedi";
+}
+
+.written-txt{
+	font-family: "gmedi";
+}
+
+.written-txt td button {
+	font-family: "gsl";
+	width: 150px;
+	height: 30px;
+	font-size: 12pt;
+	background-color: #1a9fe3;
+	color: white;
+	border-radius: 5px;
+}

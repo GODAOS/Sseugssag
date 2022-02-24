@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: "a";
+	src: url("font/a.ttf");
+}
+
+body {
+	margin: 0px;
+	font-family: "a";
+}
+
+#maintbl {
+	position: relative;
+	width: 100%;
+	top: 100px;
+}
+
+#Tbl1 {
+	width: 100%;
+	height: 100px;
+	background-color : #1a9fe3;
+	font-size: 15px;
+	color: white;
+	position: fixed;
+	z-index: 1;
+	background-color: #1a9fe3;
+}
+
+
+#titleImg {
+	max-width: 220px;
+	max-height: 80px;
+}
+
+#login .loginInput {
+	border: 1.5px solid black;
+}
+
+#in .loginBt {
+	background-color: #1a9fe3;
+	color: white;
+	border: 1px solid white;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+#menu {
+	padding: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	background-color: #1a9fe3;
+	text-align: center;
+}
+
+#menu .mainMenu {
+	color: white;
+	/* margin-bottom: 0;
+		padding-bottom: 0; */
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.mainMenu:link, :visited {
+	text-decoration-line: none;
+	color: white;
+}
+
+#menu .mainMenu:hover {
+	color: #002187;
+}

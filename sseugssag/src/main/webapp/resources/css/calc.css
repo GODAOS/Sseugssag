@@ -1,0 +1,57 @@
+@charset "UTF-8";
+@font-face {
+	font-family: "gl";
+	src: url("resources/css/font/GmarketSansTTFLight.ttf");
+	}
+	#calctbl{
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 150px;
+		font-family: "gl";
+	}
+	#calc{
+		width: 70%;
+		height: 200px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		font-size: 21px;
+	}
+	#calc .calcth{
+		background-color: #1a9fe3;
+		color: white;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+	#calc .calctd{
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		border: 1px solid;
+	}
+	#calculate{
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20px;
+		font-size: 20px;
+		text-align: center;
+	}
+    #calcbt{
+		background-color: #1a9fe3;
+		color: white;
+		border: 1px solid white;
+		border-top-left-radius: 3px;
+		border-top-right-radius: 3px;
+		border-bottom-right-radius: 3px;
+		border-bottom-left-radius: 3px;
+		font-family: "gl";
+		padding-left: 5px;
+		padding-right: 5px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}

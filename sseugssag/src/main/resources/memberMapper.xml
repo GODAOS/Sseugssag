@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sseugssag.main.login.MemberMapper">
+<!-- 고객 회원가입 -->
+<insert id="join" parameterType="com.sseugssag.main.login.Customer">
+insert into p_customer values(#{c_id},#{c_pw},#{c_name},#{c_phone},#{c_address})
+</insert>
+
+<!-- 업체 회원가입 -->
+<insert id="com_join" parameterType="com.sseugssag.main.login.Company">
+insert into p_company values(#{com_id},#{com_pw},#{com_phone},#{com_name},#{com_address},#{com_category})
+</insert>
+
+
+<!-- 아이디중복확인 -->
+<!-- select만 paramtertype.resultype다 사용 -->
+<select id="idCheck" parameterType="com.sseugssag.main.login.Customer" resultType="com.sseugssag.main.login.Customer">
+select * from p_customer where c_id=#{c_id}
+</select>
+
+<!-- 로그인 - 고객 -->
+<!-- jdbcType = VARCHAR : 오류떠서 넣음 -->
+<select id="getCustomerById" parameterType="com.sseugssag.main.login.Customer" 
+resultType="com.sseugssag.main.login.Customer">
+<!-- id가 내가 찾는 id와 동일하면 그 id를 포함한 모든 정보를 가지고 오게 -->
+select * from p_customer where c_id=#{c_id}
+</select>
+
+<!-- 로그인 - 업체 -->
+<select id="getCompanyById" parameterType="com.sseugssag.main.login.Company" resultType="com.sseugssag.main.login.Company">
+select * from p_company where com_id=#{com_id}
+</select>
+
+<!-- 정보수정 - 고객 -->
+<update id="update" parameterType="com.sseugssag.main.login.Customer">
+update p_customer set c_pw=#{c_pw}, c_name=#{c_name}, c_phone=#{c_phone}, c_address=#{c_address} where c_id=#{c_id} 
+</update>
+
+<!--  탈퇴 - 고객 -->
+<delete id="bye" parameterType="com.sseugssag.main.login.Customer">
+delete from p_customer where c_id=#{c_id}
+</delete>
+
+<!-- 정보수정 - 업체 -->
+<update id="update_company" parameterType="com.sseugssag.main.login.Company">
+update p_company set com_pw=#{com_pw}, com_phone=#{com_phone}, com_name=#{com_name}, com_address=#{com_address},com_category=#{com_category} where com_id=#{com_id} 
+</update>
+
+<!--  탈퇴 - 업체 -->
+<delete id="bye_company" parameterType="com.sseugssag.main.login.Company">
+delete from p_company where com_id=#{com_id}
+</delete>
+
+</mapper>
+
+
+
+
+
+
+
+
+
+

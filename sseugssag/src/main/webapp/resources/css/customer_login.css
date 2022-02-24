@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: "gl";
+	src: url("resources/css/font/GmarketSansTTFLight.ttf");
+}
+
+#cusjoinbody {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#cusjointbl {
+	margin-left: 27%;
+	margin-top: 40px;
+	font-family: "gl";
+}
+
+#cusjointitle {
+	font-size: 29px;
+}
+
+#cusjoin {
+	height: 700px;
+	font-size: 20px;
+	font-family: "gl";
+	font-weight: 250px;
+}
+
+#cusjoinbt {
+	margin-left: 40%;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: #1a9fe3;
+	color: white;
+	border: 1px solid white;
+	border-top-left-radius: 9px;
+	border-top-right-radius: 9px;
+	border-bottom-right-radius: 9px;
+	border-bottom-left-radius: 9px;
+	font-size: 20px;
+	font-family: "gl";
+	font-weight: 500px;
+}
+
+#cusjoin .cusjoininput {
+	font-family: "gl";
+	font-weight: 500px;
+	font-size: 15px;
+	width: 500px;
+	height: 30px;
+}
